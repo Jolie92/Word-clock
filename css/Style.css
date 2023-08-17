@@ -20,15 +20,18 @@ select {
     font-size: 18px;
     border-radius: 4px;
     padding: 10px;
+    background: linear-gradient(90deg, rgb(139, 102, 241) 0%, rgb(233, 51, 214) 100%);
+    border:1px solid black;
 }
 
 .container {
     max-width: 600px;
     margin: 60px auto;
-    background: white;
+    background: linear-gradient(90deg, rgb(233, 51, 106) 0%, rgb(139, 102, 241) 100%);
     padding: 30px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 10px;
+    
 }
 
 .city {
