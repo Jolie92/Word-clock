@@ -22,6 +22,17 @@ let sydneyElement = document.querySelector("#sydney");
       "h:mm:ss [<small>]A[</small>]"
     );
   }
+  let seattleElement = document.querySelector("#seattle");
+  if (seattleElement) {
+    let seattleDateElement = seattleElement.querySelector(".date");
+    let seattleTimeElement = seattleElement.querySelector(".time");
+    let seattleTime = moment().tz("America/Seattle");
+
+    seattleDateElement.innerHTML = seattleTime.format("MMMM	Do YYYY");
+    seattleTimeElement.innerHTML = seattleTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+}
 }
   
   function updateCity(event) {
@@ -44,6 +55,7 @@ let sydneyElement = document.querySelector("#sydney");
   </div>
   `;
 }
+
 
 updateTime();
 setInterval(updateTime, 1000);
